@@ -1,0 +1,152 @@
+body {
+    /* 使用微軟正黑體, helvetica neue, arial, sans-serif   */
+    font-family: 'Microsoft JhengHei',  "helvetica neue", arial, sans-serif;
+}
+
+/*============ index 頁面 ============*/
+
+.important-title {
+    color:rgb(1, 9, 15);
+    font-size: 42px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.g-100 {
+    filter: grayscale(100%);
+    transition: all 3s ease;
+}
+
+.g-100:hover {
+    filter: grayscale(0%)
+}
+
+.big-card {
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.377);
+    opacity: .91;
+    transition: all .3s ease;
+    transform: scale(.97);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+
+.pic-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.big-card-img {
+    width: calc(100% / 3.022);
+    box-align: center;
+}
+
+/*============ cards 頁面 ============*/
+.bg-grey {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(100% / 3);
+    padding: 20px 10px;
+}
+
+.card:hover{
+    box-shadow: 4px 6px 10px rgba(17, 17, 17, 0.63);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card {
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.377);
+    opacity: .8;
+    transition: all .3s ease;
+    transform: scale(.97);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* 卡片圖片 */
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+/* 卡片文字區 */
+.card-body {
+    padding: 15px 15px;
+    background-color: whitesmoke;
+}
+
+/* 卡片標題 */
+.card-title {
+    margin-top: 0px;
+}
+
+/* 卡片內文 */
+.card-text {
+    margin-bottom: 0px;
+}
+
+/* 卡片分類徽章 */
+.badge {
+    color: white;
+    padding: 0px 2px;
+}
+
+.bg-purple {
+    background: rgb(153, 15, 207);
+}
+
+.bg-red {
+    background: rgb(177, 13, 13);
+}
+
+.bg-blue {
+    background: rgb(30, 105, 170);
+}
+
+/* CSS Media Query */
+@media (max-width: 576px) {
+    /* 以下選擇器只在視窗寬度<=576px才有效 手機版*/
+    .col {
+        width: 100%;
+    }
+
+    .card-title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .card-body {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    /* 以下選擇器只在視窗寬度>=577px才有效 平板版*/
+    .col{
+        width: 50%;
+    }
+}
+
+
+
